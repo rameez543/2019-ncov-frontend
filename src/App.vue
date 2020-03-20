@@ -33,6 +33,11 @@
               Recovered:
               <ICountUp :endVal="l.recovered" />
             </v-list-item-subtitle>
+            <v-list-item-subtitle>
+              Mortality Rate:
+              <ICountUp :endVal="(l.death / l.confirmed) * 100" />
+              %
+            </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </v-list>
